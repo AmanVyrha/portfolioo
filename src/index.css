@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+}
+
+.glitch {
+  text-shadow: 
+    0.05em 0 0 rgba(255,0,0,.75),
+    -0.025em -0.05em 0 rgba(0,255,0,.75),
+    0.025em 0.05em 0 rgba(0,0,255,.75);
+  animation: glitch 500ms infinite;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 
+      0.05em 0 0 rgba(255,0,0,.75),
+      -0.05em -0.025em 0 rgba(0,255,0,.75),
+      -0.025em 0.05em 0 rgba(0,0,255,.75);
+  }
+  14% {
+    text-shadow: 
+      0.05em 0 0 rgba(255,0,0,.75),
+      -0.05em -0.025em 0 rgba(0,255,0,.75),
+      -0.025em 0.05em 0 rgba(0,0,255,.75);
+  }
+  15% {
+    text-shadow: 
+      -0.05em -0.025em 0 rgba(255,0,0,.75),
+      0.025em 0.025em 0 rgba(0,255,0,.75),
+      -0.05em -0.05em 0 rgba(0,0,255,.75);
+  }
+  49% {
+    text-shadow: 
+      -0.05em -0.025em 0 rgba(255,0,0,.75),
+      0.025em 0.025em 0 rgba(0,255,0,.75),
+      -0.05em -0.05em 0 rgba(0,0,255,.75);
+  }
+  50% {
+    text-shadow: 
+      0.025em 0.05em 0 rgba(255,0,0,.75),
+      0.05em 0 0 rgba(0,255,0,.75),
+      0 -0.05em 0 rgba(0,0,255,.75);
+  }
+  99% {
+    text-shadow: 
+      0.025em 0.05em 0 rgba(255,0,0,.75),
+      0.05em 0 0 rgba(0,255,0,.75),
+      0 -0.05em 0 rgba(0,0,255,.75);
+  }
+  100% {
+    text-shadow: 
+      -0.025em 0 0 rgba(255,0,0,.75),
+      -0.025em -0.025em 0 rgba(0,255,0,.75),
+      -0.025em -0.05em 0 rgba(0,0,255,.75);
+  }
+}

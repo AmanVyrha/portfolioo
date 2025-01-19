@@ -42,7 +42,7 @@ const Bio = () => {
                 <p className="text-gray-400">Dublin Business School, Ireland</p>
               </div>
               <div>
-                <p className="text-green-500">2019 - 2022</p>
+                <p className="text-green-500">2021 - 2024</p>
                 <p className="text-gray-100">Bachelor's in Science in Computer Science</p>
                 <p className="text-gray-400">University of Delhi, India</p>
               </div>
